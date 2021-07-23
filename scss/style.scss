@@ -48,14 +48,14 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 18vh;
+        height: 9vh;
         padding: 0px 11%;
         z-index: 99999999; 
         background: white;
         box-sizing: border-box;
         transition: all 0.4s linear;
        .logo {
-            margin-top: 3%;
+            margin-top: 2%;
             width: 30%;
            img {
                display: block;    
@@ -104,11 +104,11 @@
         
        
     .topheader {
+      height: 11vh;
        display: flex;
        justify-content: space-between;
        font-weight: 500;
        transition: all .4s;
-
        .logo {
             margin-top: 3%;
             width: 30%;
@@ -119,7 +119,7 @@
        }
        .navbar {
             background: rgba(0, 0, 0, 0) !important; 
-            height: 18vh;
+            height: 11vh;
             ul {
               display: flex;
               list-style: none;
@@ -704,7 +704,7 @@ button.btn-apply:hover {
       visibility: initial !important;
     }
     .topheader {
-      height: 18vh;
+      height: 13vh;
       position: relative;
       .logo {
         margin-top: 6% !important;
@@ -714,7 +714,7 @@ button.btn-apply:hover {
         }
       }
       .navbar {
-        height: 15vh; 
+        height: 13vh; 
         opacity: 0;
         position: absolute;
         top: 100%;
@@ -737,7 +737,7 @@ button.btn-apply:hover {
       }
     }
     .fixcung {
-      height: 15vh;
+      height: 13vh !important;
      
       .logo {
         width: 30%;
@@ -748,7 +748,7 @@ button.btn-apply:hover {
       }
       
       .navbar {
-        height: 15vh; 
+        height: 13vh; 
         opacity: 0;
         position: absolute;
         top: 100%;
@@ -829,22 +829,23 @@ button.btn-apply:hover {
   }
   .header {
     .topheader {
+      height: 12vh !important;
       .navbar {
-        width: 50%;
+        width: 55%;
       }
     }
     .fixcung {
-      height: 15vh !important;
+      height: 12vh !important;
       .navbar {
-        width: 50%;
+        width: 55%;
       }
     }
     .bottomheader {
         display: block;
       .chubottomheader {
-        padding: 0px 30px 30px;
+        padding: 0px 30px;
         .headertitle {
-          font-size: 25px;
+          font-size: 23px;
           text-align: center;
           padding: 20px 0px;
         }
@@ -856,6 +857,7 @@ button.btn-apply:hover {
           font-size: 14px;
           margin-bottom: 30px;
           width: 139px;
+          margin-left: 5px;
         }
       }
     }

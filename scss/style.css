@@ -54,7 +54,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 18vh;
+  height: 9vh;
   padding: 0px 11%;
   z-index: 99999999;
   background: white;
@@ -65,7 +65,7 @@ html {
 }
 
 .header .fixcung .logo {
-  margin-top: 3%;
+  margin-top: 2%;
   width: 30%;
 }
 
@@ -100,6 +100,7 @@ html {
 }
 
 .header .topheader {
+  height: 11vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +123,7 @@ html {
 
 .header .topheader .navbar {
   background: rgba(0, 0, 0, 0) !important;
-  height: 18vh;
+  height: 11vh;
 }
 
 .header .topheader .navbar ul {
@@ -701,7 +702,7 @@ button.btn-apply:hover {
     visibility: initial !important;
   }
   .header .topheader {
-    height: 18vh;
+    height: 13vh;
     position: relative;
   }
   .header .topheader .logo {
@@ -711,7 +712,7 @@ button.btn-apply:hover {
     margin: 0 auto;
   }
   .header .topheader .navbar {
-    height: 15vh;
+    height: 13vh;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -732,7 +733,7 @@ button.btn-apply:hover {
     color: white;
   }
   .header .fixcung {
-    height: 15vh;
+    height: 13vh !important;
   }
   .header .fixcung .logo {
     width: 30%;
@@ -742,7 +743,7 @@ button.btn-apply:hover {
     margin: 0 auto;
   }
   .header .fixcung .navbar {
-    height: 15vh;
+    height: 13vh;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -808,23 +809,26 @@ button.btn-apply:hover {
     margin: 0px;
     padding: 0px;
   }
+  .header .topheader {
+    height: 12vh !important;
+  }
   .header .topheader .navbar {
-    width: 50%;
+    width: 55%;
   }
   .header .fixcung {
-    height: 15vh !important;
+    height: 12vh !important;
   }
   .header .fixcung .navbar {
-    width: 50%;
+    width: 55%;
   }
   .header .bottomheader {
     display: block;
   }
   .header .bottomheader .chubottomheader {
-    padding: 0px 30px 30px;
+    padding: 0px 30px;
   }
   .header .bottomheader .chubottomheader .headertitle {
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
     padding: 20px 0px;
   }
@@ -836,6 +840,7 @@ button.btn-apply:hover {
     font-size: 14px;
     margin-bottom: 30px;
     width: 139px;
+    margin-left: 5px;
   }
   .title span {
     font-size: 26px;
