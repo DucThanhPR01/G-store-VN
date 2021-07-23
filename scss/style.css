@@ -25,10 +25,6 @@ html {
   padding-top: 130px !important;
 }
 
-.paddingplustwo {
-  padding-top: 210px !important;
-}
-
 .header {
   height: 100%;
   padding: 0px 10%;
@@ -94,7 +90,7 @@ html {
 .header .fixcung .navbar ul li a {
   height: 100%;
   margin: 6px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none !important;
   color: rgba(0, 0, 0, 0.55);
 }
@@ -167,7 +163,7 @@ html {
 }
 
 .header .bottomheader .chubottomheader .headertitle {
-  font-size: 2.5em;
+  font-size: 2.1em;
   color: white;
   padding: 30px 0px;
 }
@@ -229,14 +225,7 @@ html {
           transform: translateY(-10px);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.gioithieu {
+.tinhnang {
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -317,7 +306,7 @@ p.p_font.wow.fadeInUp {
   border-radius: 10px;
 }
 
-.videogioithieu .video-info button {
+.videogioithieu .video-info .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,34 +359,7 @@ p.p_font.wow.fadeInUp {
   border-radius: 10px;
 }
 
-.swiper-slide-active {
-  width: 323.333px;
-  -webkit-transform: translate3d(0px, 0px, -149.845px) rotateX(0deg) rotateY(0deg);
-          transform: translate3d(0px, 0px, -149.845px) rotateX(0deg) rotateY(0deg);
-  z-index: 0;
-  -webkit-transition-duration: 0ms;
-          transition-duration: 0ms;
-}
-
-.swiper-slide-next {
-  width: 323.333px;
-  -webkit-transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
-          transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
-  z-index: 1;
-  -webkit-transition-duration: 0ms;
-          transition-duration: 0ms;
-}
-
-.swiper-slide-prev {
-  width: 323.333px;
-  -webkit-transform: translate3d(0px, 0px, -300.155px) rotateX(0deg) rotateY(0deg);
-          transform: translate3d(0px, 0px, -300.155px) rotateX(0deg) rotateY(0deg);
-  z-index: -1;
-  -webkit-transition-duration: 0ms;
-          transition-duration: 0ms;
-}
-
-.economic {
+.vechungtoi {
   padding: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -407,11 +369,11 @@ p.p_font.wow.fadeInUp {
   background-attachment: fixed;
 }
 
-.economic .title {
+.vechungtoi .title {
   margin-bottom: 0px;
 }
 
-.economic .title span {
+.vechungtoi .title span {
   color: white;
 }
 
@@ -475,12 +437,13 @@ button.btn-apply:hover {
 .call-action3 .call-mobile-img {
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: auto;
 }
 
 .call-action3 .call-mobile-img img {
-  position: absolute;
-  bottom: -410px;
-  z-index: -1;
+  width: 100%;
+  padding: 20px;
 }
 
 .call-action3 .call-text h2 {
@@ -540,6 +503,7 @@ button.btn-apply:hover {
 
 .cocaucongty .listcocaucongty .tenthanhphan {
   position: relative;
+  padding: 10px;
 }
 
 .cocaucongty .listcocaucongty .tenthanhphan a img {
@@ -551,30 +515,35 @@ button.btn-apply:hover {
 
 .cocaucongty .listcocaucongty .tenthanhphan a .textlist {
   position: absolute;
-  width: 91%;
-  bottom: 0px;
+  width: 94%;
+  bottom: 10px;
   border-radius: 0px 0px 7px 7px;
   display: block !important;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   color: #e5e5e5;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 .tintuc {
   width: 100%;
   height: auto;
   margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
   height: 100%;
-  margin: 0px auto;
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 10px;
+  /* padding: 0px 5px; */
+  /* padding: 15% 12% 7%; */
   z-index: -5;
+}
+
+.content {
+  padding: 10px;
 }
 
 .thumbnail-blog h6 {
@@ -611,6 +580,7 @@ button.btn-apply:hover {
 
 .thumbnail-img {
   height: 200px;
+  padding: 10px;
 }
 
 .footer {
@@ -683,8 +653,26 @@ button.btn-apply:hover {
     margin: 0px;
     padding: 0px;
   }
-  .header .bottomheader .anhbottomheader img {
+  .header .bottomheader .chubottomheader {
+    width: 100%;
+    text-align: center;
+  }
+  .header .bottomheader .chubottomheader p {
+    text-align: center !important;
+    font-size: 16px;
+  }
+  .header .bottomheader .anhbottomheader {
     display: none;
+  }
+  .vechungtoi .panel-group.faq-inner-accordion {
+    padding: 0;
+  }
+  .call-action3 .call-text p {
+    padding: 0;
+  }
+  .taiungdung .app-btn {
+    width: 154px;
+    height: 50px;
   }
 }
 
@@ -741,13 +729,10 @@ button.btn-apply:hover {
   }
   .header .topheader .navbar ul li {
     padding: 20px;
-  }
-  .header .topheader .navbar ul li:hover {
-    background: #cfd2cb7a;
+    color: white;
   }
   .header .fixcung {
     height: 15vh;
-    color: rgba(0, 0, 0, 0.55) !important;
   }
   .header .fixcung .logo {
     width: 30%;
@@ -776,8 +761,45 @@ button.btn-apply:hover {
   .header .fixcung .navbar ul li {
     padding: 20px;
   }
-  .header .fixcung .navbar ul li:hover {
-    background: #cfd2cb7a;
+  .header .fixcung .navbar ul li a {
+    color: white !important;
+    font-weight: 500;
+  }
+  .header .fixcung .navbar ul .active {
+    border-bottom: 2px solid white !important;
+  }
+  .header .bottomheader .chubottomheader {
+    text-align: center;
+  }
+  .header .bottomheader .chubottomheader p {
+    text-align: center;
+  }
+  .header .bottomheader .anhbottomheader {
+    display: none;
+  }
+  .title span {
+    font-size: 33px;
+  }
+  .title p {
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  p.p_font.wow.fadeInUp.aos-init.aos-animate {
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+  }
+  .videogioithieu .video-info {
+    display: block;
+    padding: 0;
+  }
+  .videogioithieu .video-info .clip iframe {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  .videogioithieu .btn {
+    display: none !important;
   }
 }
 
@@ -821,7 +843,7 @@ button.btn-apply:hover {
   .title p {
     font-size: 16px;
   }
-  .gioithieu .row .col-md-3 p {
+  .tinhnang .row .col-md-3 p {
     font-size: 14px;
   }
   .videogioithieu .video-info {
@@ -840,20 +862,27 @@ button.btn-apply:hover {
   .videogioithieu .video-info .btn {
     display: none;
   }
-  .economic {
+  .vechungtoi {
     padding: 5% 5% 10%;
     margin-top: 30px;
     margin-bottom: 0px;
   }
-  .economic .panel-group.faq-inner-accordion {
-    padding: 0;
+  .vechungtoi .panel-group.faq-inner-accordion {
+    padding: 0px;
   }
-  .economic .panel-group.faq-inner-accordion .panel-body {
+  .vechungtoi .panel-group.faq-inner-accordion .panel-body {
     font-weight: 500;
+  }
+  .call-mobile-img {
+    display: none;
+  }
+  .taiungdung .app-btn {
+    width: 154px;
+    height: 50px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .header {
     padding: 0;
   }

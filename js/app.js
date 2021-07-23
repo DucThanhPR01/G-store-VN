@@ -1,61 +1,113 @@
+// slider swiper js
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 5,
     loop: true, 
-    spaceBetween: 25,
     autoplay:true,
-				autoplayTimeout:2000,
-				autoplayHoverPause:true,
+	autoplayTimeout:3000,
     navigation: {
                 nextEl: '.swiper-slide-next',
                 prevEl: '.swiper-slide-prev',
             },
-	
+		breakpoints: {  
+			// when window width is >= 320px
+			320: {
+				slidesPerView: 2,
+				spaceBetween: 20
+			  },
+			  // when window width is >= 480px
+			  480: {
+				slidesPerView: 3,
+				spaceBetween: 30
+			  },
+			  // when window width is >= 640px
+			  640: {
+				slidesPerView: 4,
+				spaceBetween: 40
+			  }
+			  },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
   }); 
 
-
+//scroll js change header 
 const nav = document.querySelector('#topheader');
-const fixedNavbarHandler = () =>{
+const fixedNavbarHandler = () => {
 	if(window.pageYOffset > 200){
 		nav.classList.add('fixcung');
 		nav.classList.remove('topheader');
 		document.querySelector('.logo img').src = 'images/logo1.png'
+		document.querySelector(".iconbar").style = "color: #333;";
 	}
 	else{
 		nav.classList.remove('fixcung');
 		nav.classList.add('topheader');
 		document.querySelector('.logo img').src = 'images/logo5.png'
+		document.querySelector(".iconbar").style = "color: white;";
 	}
 		//window.pageYOffset > 200 ? nav.classList.add('fixcung') : nav.classList.remove('fixcung');
 		
 }
 window.addEventListener('scroll', fixedNavbarHandler);
-	
-new WOW().init(); 
 
-
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-items:4,
+//owlCarousel js 
+$('#owl-one').owlCarousel({
 loop:true,
 margin:20,
 autoplay:true,
-autoplayTimeout:3000,
-autoplayHoverPause:true,
-navigation: {
-	nextEl: '.swiper-slide-next',
-	prevEl: '.swiper-slide-prev',
-}
+autoplayTimeout:5000,
+responsiveClass: true,
+autoHeight: true,
+smartSpeed: 800,
+responsive: {
+    0: {
+      items: 2
+    },
+	576: {
+		items: 2
+	},
+    768: {
+      items: 3
+    },
+
+    1024: {
+      items: 4
+    },
+
+    1366: {
+      items: 4
+    }
+  }
 });
-$('.play').on('click',function(){
-owl.trigger('play.owl.autoplay',[2000])
-})
-$('.stop').on('click',function(){
-owl.trigger('stop.owl.autoplay')
-})
+$('#owl-two').owlCarousel({
+	loop:true,
+	margin:20,
+	autoplay:true,
+	autoplayTimeout:5000,
+	responsiveClass: true,
+	autoHeight: true,
+	smartSpeed: 800,
+	responsive: {
+		0: {
+		  items: 2
+		},
+		576: {
+			items: 2
+		},
+		768: {
+		  items: 3
+		},
+	
+		1024: {
+		  items: 5
+		},
+	
+		1366: {
+		  items: 5
+		}
+	  }
+	});
 
 const iconbar = document.querySelector(".iconbar");
 iconbar.addEventListener("click", function() {
@@ -72,8 +124,8 @@ iconbar.addEventListener("click", function() {
 	$('.loader').delay(1000).fadeOut('fast');
  });
 
+ //js change padding div
  var a = document.querySelectorAll(".menu li a");
-
  for (var i = 0, length = a.length; i < length; i++) {
    a[i].onclick = function() {
 	 var b = document.querySelector(".menu li.active");
