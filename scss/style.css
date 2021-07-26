@@ -26,7 +26,7 @@ html {
 }
 
 .header {
-  height: 100%;
+  height: 100vh;
   padding: 0px 10%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -54,7 +54,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 9vh;
+  height: 16vh;
   padding: 0px 11%;
   z-index: 99999999;
   background: white;
@@ -65,7 +65,7 @@ html {
 }
 
 .header .fixcung .logo {
-  margin-top: 2%;
+  margin-top: 3%;
   width: 30%;
 }
 
@@ -706,7 +706,7 @@ button.btn-apply:hover {
     position: relative;
   }
   .header .topheader .logo {
-    margin-top: 6% !important;
+    margin-top: 3% !important;
   }
   .header .topheader .logo img {
     margin: 0 auto;
@@ -737,7 +737,7 @@ button.btn-apply:hover {
   }
   .header .fixcung .logo {
     width: 30%;
-    margin-top: 6% !important;
+    margin-top: 3% !important;
   }
   .header .fixcung .logo img {
     margin: 0 auto;

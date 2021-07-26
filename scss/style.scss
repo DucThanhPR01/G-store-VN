@@ -23,7 +23,7 @@
   padding-top: 130px !important;
 }
 .header {
-    height: 100%;
+    height: 100vh;
     padding: 0px 10%;
     justify-content: space-between;
     // background: -webkit-linear-gradient(
@@ -48,14 +48,14 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 9vh;
+        height: 16vh;
         padding: 0px 11%;
         z-index: 99999999; 
         background: white;
         box-sizing: border-box;
         transition: all 0.4s linear;
        .logo {
-            margin-top: 2%;
+            margin-top: 3%;
             width: 30%;
            img {
                display: block;    
@@ -421,7 +421,6 @@ button.btn-apply:hover {
     padding: 20px;
   }
 }
-
 .call-action3 .call-text h2 {
   font-style: normal;
   font-variant: normal;
@@ -448,7 +447,7 @@ button.btn-apply:hover {
 }
 // tai ung dung css end
 
-
+//khanh hang tieu bieu css here
 .khachhangtieubieu {
   margin-top: 60px;
   margin-bottom: 80px;
@@ -463,8 +462,9 @@ button.btn-apply:hover {
   max-width: 630px;
   margin: 0px auto 40px;
 }
+//khanh hang tieu bieu css end
 
-
+//co cau cong ty css here
 .cocaucongty {
   margin-top: 60px;
     
@@ -500,6 +500,7 @@ button.btn-apply:hover {
     
   
 }
+//co cau cong ty css end
 
 // tin tuc css here
 .tintuc {
@@ -551,7 +552,7 @@ button.btn-apply:hover {
   height: 200px;
   padding: 10px;
 }
-
+//tin tuc css end
 
 //Css footer here 
 .footer {
@@ -707,7 +708,7 @@ button.btn-apply:hover {
       height: 13vh;
       position: relative;
       .logo {
-        margin-top: 6% !important;
+        margin-top: 3% !important;
 
         img {
           margin: 0 auto;
@@ -741,7 +742,7 @@ button.btn-apply:hover {
      
       .logo {
         width: 30%;
-        margin-top: 6% !important;
+        margin-top: 3% !important;
         img {
           margin: 0 auto;
         }
